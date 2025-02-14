@@ -1,9 +1,8 @@
-name: flask-app
+name: fashion-recommendation-app
 type: webapp
 source:
   type: github
-  repository:  https://github.com/Shashwat1915/kleidung.git
-runtime: python39
+  repository: https://github.com/Shashwat1915/kleidung.git 
 config:
   port: 5001
   command: python app.py
