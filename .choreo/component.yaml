@@ -2,8 +2,8 @@ name: flask-app
 type: webapp
 source:
   type: github
-  repository: https://github.com/your-username/your-repo-name
-runtime: python39
+  repository:  https://github.com/Shashwat1915/kleidung.git
+runtime: python310
 config:
   port: 5000
   command: python app.py
