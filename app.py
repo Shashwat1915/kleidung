@@ -5,7 +5,8 @@ import os
 
 app = Flask(__name__)
 
-PEXELS_API_KEY = os.environ.get("NG9pCjeQouHiLVTYiRsYT0s4phWVZgutyz5z4oM1SjjkbU4RFER9y5nc")
+# Load the Pexels API key from an environment variable (Render supports this)
+PEXELS_API_KEY = os.environ.get("PEXELS_API_KEY")
 
 @app.route("/", methods=["GET", "POST"])
 def index():
@@ -16,12 +17,13 @@ def index():
         season = request.form.get("season")
         wear_type = request.form.get("wear_type")
 
-        query = f"{gender} {occasion} {season} {wear_type} fashion clothing model"
+        # Construct a query for more accurate image results
+        query = f"{gender} {occasion} {season} {wear_type} fashion clothing"
 
         # Pexels API request
         response = requests.get(
             f"https://api.pexels.com/v1/search?query={query}&per_page=5",
-            headers={"Authorization": "NG9pCjeQouHiLVTYiRsYT0s4phWVZgutyz5z4oM1SjjkbU4RFER9y5nc"}
+            headers={"Authorization": PEXELS_API_KEY}
         )
 
         if response.status_code == 200:
