@@ -6,7 +6,7 @@ import os
 app = Flask(__name__)
 
 # Load the Pexels API key from an environment variable (Render supports this)
-PEXELS_API_KEY = os.environ.get("PEXELS_API_KEY")
+PEXELS_API_KEY = os.environ.get("NG9pCjeQouHiLVTYiRsYT0s4phWVZgutyz5z4oM1SjjkbU4RFER9y5nc")
 
 @app.route("/", methods=["GET", "POST"])
 def index():
@@ -23,7 +23,7 @@ def index():
         # Pexels API request
         response = requests.get(
             f"https://api.pexels.com/v1/search?query={query}&per_page=5",
-            headers={"Authorization": PEXELS_API_KEY}
+            headers={"Authorization": "NG9pCjeQouHiLVTYiRsYT0s4phWVZgutyz5z4oM1SjjkbU4RFER9y5nc"}
         )
 
         if response.status_code == 200:
