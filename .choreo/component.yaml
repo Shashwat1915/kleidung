@@ -1,0 +1,14 @@
+name: flask-app
+type: webapp
+source:
+  type: github
+  repository: https://github.com/your-username/your-repo-name
+runtime: python
+config:
+  port: 5000
+  command: python app.py
+resources:
+  memory: 512Mi
+  cpu: 500m
+expose:
+  type: public
