@@ -3,7 +3,7 @@ type: webapp
 source:
   type: github
   repository:  https://github.com/Shashwat1915/kleidung.git
-runtime: python310
+runtime: python39
 config:
   port: 5000
   command: python app.py
