@@ -33,5 +33,9 @@ def index():
 
     return render_template("index.html", image_url=image_url)
 
+print("API Response Status Code:", response.status_code)
+print("API Response Data:", response.json())
+
+
 if __name__ == "__main__":
     app.run(debug=True, port=5001)
