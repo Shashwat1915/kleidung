@@ -1,0 +1,17 @@
+[
+    {
+      "gender": "female",
+      "occasion": "casual",
+      "season": "summer",
+      "wear_type": "topwear",
+      "image_url": "https://via.placeholder.com/512?text=Summer+Casual+Topwear"
+    },
+    {
+      "gender": "male",
+      "occasion": "formal",
+      "season": "winter",
+      "wear_type": "topwear",
+      "image_url": "https://via.placeholder.com/512?text=Winter+Formal+Topwear"
+    }
+  ]
+  
