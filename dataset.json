@@ -4,14 +4,36 @@
       "occasion": "casual",
       "season": "summer",
       "wear_type": "topwear",
-      "image_url": "https://via.placeholder.com/512?text=Summer+Casual+Topwear"
+      "image_url": "static/images/image2.png"
     },
     {
       "gender": "male",
       "occasion": "formal",
       "season": "winter",
       "wear_type": "topwear",
-      "image_url": "https://via.placeholder.com/512?text=Winter+Formal+Topwear"
+      "image_url": "static/images/image1.png"
+    },
+    {
+        "gender": "male",
+        "occasion": "casual",
+        "season": "winter",
+        "wear_type": "topwear",
+        "image_url": "static/images/image1.png"
+    },
+    {
+        "gender": "male",
+        "occasion": "formal",
+        "season": "winter",
+        "wear_type": "topwear",
+        "image_url": "static/images/image1.png"
+    },
+    {
+        "gender": "male",
+        "occasion": "formal",
+        "season": "winter",
+        "wear_type": "topwear",
+        "image_url": "static/images/image1.png"
     }
   ]
+
   
